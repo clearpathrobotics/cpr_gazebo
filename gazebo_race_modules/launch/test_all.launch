@@ -1,0 +1,23 @@
+<launch>
+    <include file="$(find gazebo_race_modules)/launch/spawn_world.launch" />
+    <node name="BlackEdge_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model BlackEdge_complex -param BlackEdge_complex_description -x 0 -y 0 -z 0 -Y 0" />
+    <node name="Dirt_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model Dirt_complex -param Dirt_complex_description -x 1 -y 0 -z 0 -Y 0" />
+    <node name="MudCorner_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model MudCorner_simple -param MudCorner_simple_description -x 2 -y 0 -z 0 -Y 0" />
+    <node name="RacingEdgeCurve_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model RacingEdgeCurve_simple -param RacingEdgeCurve_simple_description -x 3 -y 0 -z 0 -Y 0" />
+    <node name="RoadCorner_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model RoadCorner_simple -param RoadCorner_simple_description -x 4 -y 0 -z 0 -Y 0" />
+    <node name="BlackEdgeCurve_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model BlackEdgeCurve_complex -param BlackEdgeCurve_complex_description -x 5 -y 0 -z 0 -Y 0" />
+    <node name="DirtCorner_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model DirtCorner_complex -param DirtCorner_complex_description -x 6 -y 0 -z 0 -Y 0" />
+    <node name="Mud_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model Mud_simple -param Mud_simple_description -x 7 -y 0 -z 0 -Y 0" />
+    <node name="RacingEdge_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model RacingEdge_simple -param RacingEdge_simple_description -x 8 -y 0 -z 0 -Y 0" />
+    <node name="Road_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model Road_simple -param Road_simple_description -x 9 -y 0 -z 0 -Y 0" />
+    <node name="BlackEdgeCurve_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model BlackEdgeCurve_simple -param BlackEdgeCurve_simple_description -x 10 -y 0 -z 0 -Y 0" />
+    <node name="DirtCorner_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model DirtCorner_simple -param DirtCorner_simple_description -x 1 -y 2 -z 0 -Y 0" />
+    <node name="Mud_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model Mud_complex -param Mud_complex_description -x 2 -y 2 -z 0 -Y 0" />
+    <node name="RacingEdge_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model RacingEdge_complex -param RacingEdge_complex_description -x 3 -y 2 -z 0 -Y 0" />
+    <node name="Road_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model Road_complex -param Road_complex_description -x 4 -y 2 -z 0 -Y 0" />
+    <node name="BlackEdge_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model BlackEdge_simple -param BlackEdge_simple_description -x 5 -y 2 -z 0 -Y 0" />
+    <node name="Dirt_simple_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model Dirt_simple -param Dirt_simple_description -x 6 -y 2 -z 0 -Y 0" />
+    <node name="MudCorner_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model MudCorner_complex -param MudCorner_complex_description -x 7 -y 2 -z 0 -Y 0" />
+    <node name="RacingEdgeCurve_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model RacingEdgeCurve_complex -param RacingEdgeCurve_complex_description -x 8 -y 2 -z 0 -Y 0" />
+    <node name="RoadCorner_complex_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model RoadCorner_complex -param RoadCorner_complex_description -x 9 -y 2 -z 0 -Y 0" />
+</launch>

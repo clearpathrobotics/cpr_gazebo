@@ -1,0 +1,24 @@
+<launch>
+  <param name="BlackEdge_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/BlackEdge_complex.urdf.xacro'" />
+  <param name="Dirt_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Dirt_complex.urdf.xacro'" />
+  <param name="Ground_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Ground_complex.urdf.xacro'" />
+  <param name="MudCorner_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/MudCorner_simple.urdf.xacro'" />
+  <param name="RacingEdgeCurve_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/RacingEdgeCurve_simple.urdf.xacro'" />
+  <param name="RoadCorner_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/RoadCorner_simple.urdf.xacro'" />
+  <param name="BlackEdgeCurve_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/BlackEdgeCurve_complex.urdf.xacro'" />
+  <param name="DirtCorner_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/DirtCorner_complex.urdf.xacro'" />
+  <param name="Ground_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Ground_simple.urdf.xacro'" />
+  <param name="Mud_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Mud_simple.urdf.xacro'" />
+  <param name="RacingEdge_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/RacingEdge_simple.urdf.xacro'" />
+  <param name="Road_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Road_simple.urdf.xacro'" />
+  <param name="BlackEdgeCurve_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/BlackEdgeCurve_simple.urdf.xacro'" />
+  <param name="DirtCorner_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/DirtCorner_simple.urdf.xacro'" />
+  <param name="Mud_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Mud_complex.urdf.xacro'" />
+  <param name="RacingEdge_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/RacingEdge_complex.urdf.xacro'" />
+  <param name="Road_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Road_complex.urdf.xacro'" />
+  <param name="BlackEdge_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/BlackEdge_simple.urdf.xacro'" />
+  <param name="Dirt_simple_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/Dirt_simple.urdf.xacro'" />
+  <param name="MudCorner_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/MudCorner_complex.urdf.xacro'" />
+  <param name="RacingEdgeCurve_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/RacingEdgeCurve_complex.urdf.xacro'" />
+  <param name="RoadCorner_complex_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/RoadCorner_complex.urdf.xacro'" />
+</launch>
