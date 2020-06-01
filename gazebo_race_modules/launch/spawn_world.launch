@@ -12,7 +12,4 @@
   </include>
 
   <include file="$(find gazebo_race_modules)/launch/object_descriptions.launch" />
-
-  <node name="ground_urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-        args="-urdf -model Ground_simple -param Ground_simple_description -x 0 -y 0 -z 0 -Y 0" />
 </launch>
