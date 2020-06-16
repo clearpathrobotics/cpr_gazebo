@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.82.7 commit date:2020-03-12, commit time:05:06, hash:375c7dc4caf4</authoring_tool>
+    </contributor>
+    <created>2020-06-01T10:24:57</created>
+    <modified>2020-06-01T10:24:57</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Road-effect">
+      <profile_COMMON>
+        <newparam sid="Plaster17_COL_VAR1_3K_jpg-surface">
+          <surface type="2D">
+            <init_from>Plaster17_COL_VAR1_3K_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Plaster17_COL_VAR1_3K_jpg-sampler">
+          <sampler2D>
+            <source>Plaster17_COL_VAR1_3K_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Plaster17_COL_VAR1_3K_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Plaster17_COL_VAR1_3K_jpg" name="Plaster17_COL_VAR1_3K_jpg">
+      <init_from>Plaster17_COL_VAR1_3K.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Road-material" name="Road">
+      <instance_effect url="#Road-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Plane_007-mesh" name="Plane.007">
+      <mesh>
+        <source id="Plane_007-mesh-positions">
+          <float_array id="Plane_007-mesh-positions-array" count="24">-1.5 -1.5 0 1.5 -1.5 0 -1.5 1.5 0 1.5 1.5 0 -1.5 1.349133 0.06 -1.5 -1.349133 0.06 1.5 -1.349133 0.06 1.5 1.349133 0.06</float_array>
+          <technique_common>
+            <accessor source="#Plane_007-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_007-mesh-normals">
+          <float_array id="Plane_007-mesh-normals-array" count="12">0 0.1881217 0.9821458 0 0.3695536 0.9292095 0 -0.3695536 0.9292095 0 -0.1881217 0.9821458</float_array>
+          <technique_common>
+            <accessor source="#Plane_007-mesh-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_007-mesh-map-0">
+          <float_array id="Plane_007-mesh-map-0-array" count="36">2.038879 1.743351 -0.9459244 1.893453 -0.9459244 1.743351 2.038879 -1.091351 -0.9459244 -0.9412487 -0.9459244 -1.091351 2.038879 -0.9412487 -0.9459244 1.743351 -0.9459244 -0.9412487 2.038879 1.743351 2.038879 1.893453 -0.9459244 1.893453 2.038879 -1.091351 2.038879 -0.9412487 -0.9459244 -0.9412487 2.038879 -0.9412487 2.038879 1.743351 -0.9459244 1.743351</float_array>
+          <technique_common>
+            <accessor source="#Plane_007-mesh-map-0-array" count="18" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane_007-mesh-vertices">
+          <input semantic="POSITION" source="#Plane_007-mesh-positions"/>
+        </vertices>
+        <triangles material="Road-material" count="6">
+          <input semantic="VERTEX" source="#Plane_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane_007-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane_007-mesh-map-0" offset="2" set="0"/>
+          <p>7 0 0 2 1 1 4 0 2 1 2 3 5 3 4 0 2 5 6 3 6 4 0 7 5 3 8 7 0 9 3 1 10 2 1 11 1 2 12 6 3 13 5 3 14 6 3 15 7 0 16 4 0 17</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="large_road_straight" name="large_road_straight" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Plane_007-mesh" name="large_road_straight">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Road-material" target="#Road-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

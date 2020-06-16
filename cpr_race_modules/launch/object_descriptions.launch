@@ -1,0 +1,12 @@
+<launch>
+  <arg name="track_type" default="road" />
+  <arg name="barrier_type" default="racing" />
+  <arg name="complexity" default="simple" />
+  <arg name="size" default="small" />
+
+  <param name="ground_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/ground_$(arg complexity).urdf.xacro'" />
+  <param name="edge_corner_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/$(arg size)_$(arg barrier_type)_edge_corner_$(arg complexity).urdf.xacro'" />
+  <param name="edge_straight_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/$(arg size)_$(arg barrier_type)_edge_straight_$(arg complexity).urdf.xacro'" />
+  <param name="corner_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/$(arg size)_$(arg track_type)_corner_$(arg complexity).urdf.xacro'" />
+  <param name="straight_description" command="$(find xacro)/xacro --inorder '$(find gazebo_race_modules)/urdf/$(arg size)_$(arg track_type)_straight_$(arg complexity).urdf.xacro'" />
+</launch>

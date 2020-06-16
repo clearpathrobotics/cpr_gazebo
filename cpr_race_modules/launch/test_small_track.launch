@@ -1,0 +1,39 @@
+<launch>
+    <arg name="track_type" default="road" />
+    <arg name="barrier_type" default="racing" />
+    <arg name="complexity" default="simple" />
+    <arg name="size" default="small" />
+
+    <include file="$(find gazebo_race_modules)/launch/spawn_world.launch" />
+    <include file="$(find gazebo_race_modules)/launch/object_descriptions.launch" pass_all_args="true"/>
+
+    <node name="straight_spawner1" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight1 -param straight_description -x 0 -y 0 -z 0 -Y 0" />
+    <node name="straight_spawner2" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight2 -param straight_description -x 1 -y 0 -z 0 -Y 0" />
+    <node name="corner_spawner1" pkg="gazebo_ros" type="spawn_model" args="-urdf -model corner1 -param corner_description -x 2 -y 0 -z 0 -Y 3.14159" />
+    <node name="straight_spawner3" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight3 -param straight_description -x 2 -y 1 -z 0 -Y 1.5707" />
+    <node name="straight_spawner4" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight4 -param straight_description -x 2 -y 2 -z 0 -Y 1.5707" />
+    <node name="corner_spawner2" pkg="gazebo_ros" type="spawn_model" args="-urdf -model corner2 -param corner_description -x 2 -y 3 -z 0 -Y -1.5707" />
+    <node name="corner_spawner3" pkg="gazebo_ros" type="spawn_model" args="-urdf -model corner3 -param corner_description -x 1 -y 3 -z 0 -Y 0" />
+    <node name="corner_spawner4" pkg="gazebo_ros" type="spawn_model" args="-urdf -model corner4 -param corner_description -x 1 -y 2 -z 0 -Y 3.14159" />
+    <node name="straight_spawner5" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight5 -param straight_description -x 0 -y 2 -z 0 -Y 3.14159" />
+    <node name="straight_spawner6" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight6 -param straight_description -x -1 -y 2 -z 0 -Y 3.14159" />
+    <node name="corner_spawner5" pkg="gazebo_ros" type="spawn_model" args="-urdf -model corner5 -param corner_description -x -2 -y 2 -z 0 -Y 0" />
+    <node name="straight_spawner7" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight7 -param straight_description -x -2 -y 1 -z 0 -Y 1.5707" />
+    <node name="corner_spawner6" pkg="gazebo_ros" type="spawn_model" args="-urdf -model corner6 -param corner_description -x -2 -y 0 -z 0 -Y 1.5707" />
+    <node name="straight_spawner8" pkg="gazebo_ros" type="spawn_model" args="-urdf -model straight8 -param straight_description -x -1 -y 0 -z 0 -Y 0" />
+
+    <node name="edge_straight_spawner1" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight1 -param edge_straight_description -x 0 -y 0 -z 0 -Y 0" />
+    <node name="edge_straight_spawner2" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight2 -param edge_straight_description -x 1 -y 0 -z 0 -Y 0" />
+    <node name="edge_corner_spawner1" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_corner1 -param edge_corner_description -x 2 -y 0 -z 0 -Y 3.14159" />
+    <node name="edge_straight_spawner3" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight3 -param edge_straight_description -x 2 -y 1 -z 0 -Y 1.5707" />
+    <node name="edge_straight_spawner4" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight4 -param edge_straight_description -x 2 -y 2 -z 0 -Y 1.5707" />
+    <node name="edge_corner_spawner2" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_corner2 -param edge_corner_description -x 2 -y 3 -z 0 -Y -1.5707" />
+    <node name="edge_corner_spawner3" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_corner3 -param edge_corner_description -x 1 -y 3 -z 0 -Y 0" />
+    <node name="edge_corner_spawner4" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_corner4 -param edge_corner_description -x 1 -y 2 -z 0 -Y 3.14159" />
+    <node name="edge_straight_spawner5" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight5 -param edge_straight_description -x 0 -y 2 -z 0 -Y 3.14159" />
+    <node name="edge_straight_spawner6" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight6 -param edge_straight_description -x -1 -y 2 -z 0 -Y 3.14159" />
+    <node name="edge_corner_spawner5" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_corner5 -param edge_corner_description -x -2 -y 2 -z 0 -Y 0" />
+    <node name="edge_straight_spawner7" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight7 -param edge_straight_description -x -2 -y 1 -z 0 -Y 1.5707" />
+    <node name="edge_corner_spawner6" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_corner6 -param edge_corner_description -x -2 -y 0 -z 0 -Y 1.5707" />
+    <node name="edge_straight_spawner8" pkg="gazebo_ros" type="spawn_model" args="-urdf -model edge_straight8 -param edge_straight_description -x -1 -y 0 -z 0 -Y 0" />
+</launch>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.82.7 commit date:2020-03-12, commit time:05:06, hash:375c7dc4caf4</authoring_tool>
+    </contributor>
+    <created>2020-06-01T10:24:57</created>
+    <modified>2020-06-01T10:24:57</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="RacingBarrier-effect">
+      <profile_COMMON>
+        <newparam sid="MetalCorrugatedIronSheet002_COL_3K_ORANGE_jpg-surface">
+          <surface type="2D">
+            <init_from>MetalCorrugatedIronSheet002_COL_3K_ORANGE_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="MetalCorrugatedIronSheet002_COL_3K_ORANGE_jpg-sampler">
+          <sampler2D>
+            <source>MetalCorrugatedIronSheet002_COL_3K_ORANGE_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="MetalCorrugatedIronSheet002_COL_3K_ORANGE_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="MetalCorrugatedIronSheet002_COL_3K_ORANGE_jpg" name="MetalCorrugatedIronSheet002_COL_3K_ORANGE_jpg">
+      <init_from>MetalCorrugatedIronSheet002_COL_3K_ORANGE.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="RacingBarrier-material" name="RacingBarrier">
+      <instance_effect url="#RacingBarrier-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Circle_001-mesh" name="Circle.001">
+      <mesh>
+        <source id="Circle_001-mesh-positions">
+          <float_array id="Circle_001-mesh-positions-array" count="84">0.5 0.4499999 0.03549963 0.5 0.4353553 0.07085496 0.5 0.4 0.08549964 0.5 0.3646447 0.07085496 -0.5 0.3646447 1.4428e-4 0.5 0.4353553 1.4428e-4 -0.5 0.35 0.03549963 -0.5 0.4 0.08549964 -0.5 0.4353553 1.4428e-4 0.5 -0.4499999 0.03549963 0.5 -0.4 0.08549964 0.5 -0.3646447 0.07085496 0.5 -0.3646447 1.4428e-4 -0.5 -0.3646447 0.07085496 -0.5 -0.4353553 0.07085496 -0.5 -0.4353553 1.4428e-4 0.5 0.35 0.03549963 0.5 0.3646447 1.4428e-4 -0.5 0.3646447 0.07085496 -0.5 0.4353553 0.07085496 -0.5 0.4499999 0.03549963 0.5 -0.4353553 0.07085496 0.5 -0.35 0.03549963 -0.5 -0.3646447 1.4428e-4 0.5 -0.4353553 1.4428e-4 -0.5 -0.35 0.03549963 -0.5 -0.4 0.08549964 -0.5 -0.4499999 0.03549963</float_array>
+          <technique_common>
+            <accessor source="#Circle_001-mesh-positions-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_001-mesh-normals">
+          <float_array id="Circle_001-mesh-normals-array" count="21">0 1 0 0 0.7071068 0.7071068 0 0.9238803 -0.3826816 0 -0.7071068 0.7071068 0 -1 0 0 0 1 0 -0.9238803 -0.3826816</float_array>
+          <technique_common>
+            <accessor source="#Circle_001-mesh-normals-array" count="7" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_001-mesh-map-0">
+          <float_array id="Circle_001-mesh-map-0-array" count="144">1.499854 0.1913871 -0.4998533 0.1531243 1.499854 0.1531244 1.499854 0.22965 -0.4998533 0.1913865 1.499854 0.1913871 1.499853 0.07659882 -0.4998533 0.03833776 1.499853 0.03833603 1.499854 0.1531244 -0.4998532 0.1148622 1.499854 0.1148616 1.499853 0.03833603 -0.4998536 7.56532e-5 1.499853 7.3269e-5 1.499854 0.1148616 -0.4998533 0.07659995 1.499853 0.07659882 -0.4998533 0.1531243 1.499854 0.1913871 1.499854 0.1531244 -0.4998533 0.1913865 1.499854 0.22965 1.499854 0.1913871 -0.4998533 0.03833776 1.499853 0.07659882 1.499853 0.03833603 -0.4998532 0.1148622 1.499854 0.1531244 1.499854 0.1148616 -0.4998536 7.56532e-5 1.499853 0.03833603 1.499853 7.3269e-5 -0.4998533 0.07659995 1.499854 0.1148616 1.499853 0.07659882 1.499854 0.1913871 -0.4998533 0.1913865 -0.4998533 0.1531243 1.499854 0.22965 -0.4998534 0.2296487 -0.4998533 0.1913865 1.499853 0.07659882 -0.4998533 0.07659995 -0.4998533 0.03833776 1.499854 0.1531244 -0.4998533 0.1531243 -0.4998532 0.1148622 1.499853 0.03833603 -0.4998533 0.03833776 -0.4998536 7.56532e-5 1.499854 0.1148616 -0.4998532 0.1148622 -0.4998533 0.07659995 -0.4998533 0.1531243 -0.4998533 0.1913865 1.499854 0.1913871 -0.4998533 0.1913865 -0.4998534 0.2296487 1.499854 0.22965 -0.4998533 0.03833776 -0.4998533 0.07659995 1.499853 0.07659882 -0.4998532 0.1148622 -0.4998533 0.1531243 1.499854 0.1531244 -0.4998536 7.56532e-5 -0.4998533 0.03833776 1.499853 0.03833603 -0.4998533 0.07659995 -0.4998532 0.1148622 1.499854 0.1148616</float_array>
+          <technique_common>
+            <accessor source="#Circle_001-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Circle_001-mesh-vertices">
+          <input semantic="POSITION" source="#Circle_001-mesh-positions"/>
+        </vertices>
+        <triangles material="RacingBarrier-material" count="24">
+          <input semantic="VERTEX" source="#Circle_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Circle_001-mesh-map-0" offset="2" set="0"/>
+          <p>0 0 0 19 1 1 1 1 2 5 2 3 20 0 4 0 0 5 3 3 6 6 4 7 16 4 8 1 1 9 7 5 10 2 5 11 16 4 12 4 6 13 17 6 14 2 5 15 18 3 16 3 3 17 14 3 18 9 4 19 21 3 20 27 4 21 24 6 22 9 4 23 25 0 24 11 1 25 22 0 26 26 5 27 21 3 28 10 5 29 23 2 30 22 0 31 12 2 32 13 1 33 10 5 34 11 1 35 0 0 36 20 0 37 19 1 38 5 2 39 8 2 40 20 0 41 3 3 42 18 3 43 6 4 44 1 1 45 19 1 46 7 5 47 16 4 48 6 4 49 4 6 50 2 5 51 7 5 52 18 3 53 14 3 54 27 4 55 9 4 56 27 4 57 15 6 58 24 6 59 25 0 60 13 1 61 11 1 62 26 5 63 14 3 64 21 3 65 23 2 66 25 0 67 22 0 68 13 1 69 26 5 70 10 5 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="small_racing_edge_straight" name="small_racing_edge_straight" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Circle_001-mesh" name="small_racing_edge_straight">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="RacingBarrier-material" target="#RacingBarrier-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
