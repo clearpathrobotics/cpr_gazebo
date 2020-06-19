@@ -1,5 +1,6 @@
 <launch>
     <param name="inspection_geom" command="$(find xacro)/xacro --inorder '$(find cpr_inspection_gazebo)/urdf/inspection_geometry.urdf.xacro'" />
+    <param name="inspection_water_geom" command="$(find xacro)/xacro --inorder '$(find cpr_inspection_gazebo)/urdf/inspection_water.urdf.xacro'" />
 
     <arg name="platform" default="husky" />
     <arg name="x" default="0.0"/>
@@ -19,6 +20,7 @@
     </include>
 
     <node name="inspection_world_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model inspection_geom -param inspection_geom -x 0 -y 0 -z 0 -Y 0" />
+    <node name="inspection_water_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model inspection_water_geom -param inspection_water_geom -x 0 -y 0 -z 0 -Y 0" />
 
     <include file="$(find cpr_inspection_gazebo)/launch/spawn_$(arg platform).launch">
       <arg name="x" value="$(arg x)"/>
