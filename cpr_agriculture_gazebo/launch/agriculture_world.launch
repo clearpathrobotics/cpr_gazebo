@@ -1,0 +1,28 @@
+<launch>
+    <param name="agriculture_geom" command="$(find xacro)/xacro --inorder '$(find cpr_agriculture_gazebo)/urdf/agriculture_geometry.urdf.xacro'" />
+
+    <arg name="platform" default="husky" />
+    <arg name="x" default="0.0"/>
+    <arg name="y" default="0.0"/>
+    <arg name="z" default="0.0"/>
+
+    <arg name="use_sim_time" default="true" />
+    <arg name="gui" default="true" />
+    <arg name="headless" default="false" />
+    <arg name="world_name" default="$(find cpr_agriculture_gazebo)/worlds/actually_empty_world.world" />
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <arg name="debug" value="0" />
+      <arg name="gui" value="$(arg gui)" />
+      <arg name="use_sim_time" value="$(arg use_sim_time)" />
+      <arg name="headless" value="$(arg headless)" />
+      <arg name="world_name" value="$(arg world_name)" />
+    </include>
+
+    <node name="agriculture_world_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model agriculture_geom -param agriculture_geom -x 0 -y 0 -z 0 -Y 0" />
+
+    <include file="$(find cpr_agriculture_gazebo)/launch/spawn_$(arg platform).launch">
+      <arg name="x" value="$(arg x)"/>
+      <arg name="y" value="$(arg y)"/>
+      <arg name="z" value="$(arg z)"/>
+    </include>
+</launch>
