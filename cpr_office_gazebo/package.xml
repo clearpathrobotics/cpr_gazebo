@@ -12,7 +12,7 @@
     <exec_depend>gazebo_ros</exec_depend>
     <exec_depend>husky_gazebo</exec_depend>
     <exec_depend>jackal_gazebo</exec_depend>
-    <exec_depend>warthog_gazebo</exec_depend>
+    <exec_depend>ridgeback_gazebo</exec_depend>
 
     <export>
     </export>
