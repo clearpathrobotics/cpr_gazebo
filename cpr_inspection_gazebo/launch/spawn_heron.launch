@@ -14,6 +14,6 @@
   <include file="$(find heron_gazebo)/launch/spawn_heron.launch">
     <arg name="x" value="0"/>
     <arg name="y" value="0"/>
-    <arg name="z" value="${arg z}"/>
+    <arg name="z" value="$(arg z)"/>
   </include>
 </launch>
