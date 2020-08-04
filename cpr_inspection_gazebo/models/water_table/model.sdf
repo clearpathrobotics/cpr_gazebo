@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+<model name="water_table">
+  <static>true</static>
+  <link name="water_table_link">
+
+  <visual name="surface">
+    <cast_shadows>false</cast_shadows>
+    <pose>0 0 0 0 0 0</pose>
+    <geometry>
+      <box>
+        <size>60 60 .1</size>
+      </box>
+    </geometry>
+    <material>
+      <script>
+        <uri>file://Media/materials/scripts/water.material</uri>
+        <name>UUVSimulator/StaticWater</name>
+      </script>
+    </material>
+  </visual>
+
+  <collision name="water_table">
+    <pose>0 0 0 0 0 0</pose>
+    <geometry>
+      <mesh><uri>model://water_table/meshes/inspection_world.dae</uri><scale>1 1 1</scale></mesh>
+    </geometry>
+  </collision>
+
+  <!--
+    NOTE: we do not include a visual here, because doing so would mangle the colours for the world.
+    Instead we spawn the ground model separately within the launch file
+  -->
+
+  </link>
+</model>
+</sdf>

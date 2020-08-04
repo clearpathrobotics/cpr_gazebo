@@ -1,0 +1,11 @@
+<launch>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="5.0"/>
+
+  <include file="$(find heron_gazebo)/launch/spawn_heron.launch">
+    <arg name="x" value="0"/>
+    <arg name="y" value="0"/>
+    <arg name="z" value="1.0"/>
+  </include>
+</launch>
