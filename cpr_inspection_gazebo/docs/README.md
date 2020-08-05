@@ -15,6 +15,9 @@ Outdoor simulation world for Gazebo
 ### Warthog
 <img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2016/08/25085714/warthog-menu.jpg" width="20%">
 
+### Moose
+<img src="https://clearpathrobotics.com/assets/renders/Moose-KS_VR.274/Moose-KS_VR.274/0_9.jpg" width="20%">
+
 ### Heron
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/08/kingfisher-basic-config.jpg" width="20%">
 
@@ -30,6 +33,7 @@ Supported values for the platform variable are:
 * husky (default)
 * jackal
 * warthog
+* moose
 * heron
 
 The spawn location for the robot can be specified by setting the `x`, `y`, and `z` variables.  Note that some X/Y positions
