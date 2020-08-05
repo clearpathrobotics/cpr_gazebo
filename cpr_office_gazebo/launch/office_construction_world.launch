@@ -1,7 +1,7 @@
 <launch>
     <param name="office_geom" command="$(find xacro)/xacro --inorder '$(find cpr_office_gazebo)/urdf/office_construction_geometry.urdf.xacro'" />
 
-    <arg name="platform" default="husky" />
+    <arg name="platform" default="$(optenv CPR_GAZEBO_PLATFORM husky)" />
     <arg name="x" default="0.0"/>
     <arg name="y" default="0.0"/>
     <arg name="z" default="0.2"/>
