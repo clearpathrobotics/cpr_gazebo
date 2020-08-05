@@ -6,9 +6,17 @@ Outdoor simulation world for Gazebo
 
 ## Supported Platrofms
 
-<img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/jackal.jpg" width="20%">
-<img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2016/08/25085714/warthog-menu.jpg" width="20%">
+### Husky
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/husky.jpg" width="20%">
+
+### Jackal
+<img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/jackal.jpg" width="20%">
+
+### Warthog
+<img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2016/08/25085714/warthog-menu.jpg" width="20%">
+
+### Heron
+<img src="https://clearpathrobotics.com/wp-content/uploads/2015/08/kingfisher-basic-config.jpg" width="20%">
 
 ## Launching
 
@@ -18,7 +26,7 @@ Optionally, you can specify a platform using the platform variable:
 
 ```roslaunch cpr_inspection_gazebo inspection_world.launch platform:=jackal```
 
-Supported platforms are:
+Supported values for the platform variable are:
 * husky (default)
 * jackal
 * warthog
