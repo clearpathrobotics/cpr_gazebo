@@ -18,6 +18,18 @@ Optionally, you can specify a platform using the platform variable:
 
 ```roslaunch cpr_inspection_gazebo inspection_world.launch platform:=jackal```
 
+Supported platforms are:
+* husky (default)
+* jackal
+* warthog
+* heron
+
+The spawn location for the robot can be specified by setting the `x`, `y`, and `z` variables.  Note that some X/Y positions
+may place the robot over the water feature instead of on dry land.  The Z value should be set to be above ground-level; otherwise
+the robot may fall through the ground plane as the environment renders.
+
+NOTE: the Heron's spawn location cannot be customized; it will always spawn in the same position on the water.
+
 ## Features
 
 This is a large, open outdoor world for Gazebo that has:
@@ -37,3 +49,7 @@ This is a large, open outdoor world for Gazebo that has:
 ### Mine Tunnel
 
 <img src="img5.png">
+
+### Water physics
+
+<img src="img6.png">
