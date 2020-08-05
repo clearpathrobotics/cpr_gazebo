@@ -23,6 +23,11 @@
       <ambient>1 1 1 1</ambient>
       <background>1 1 1 1</background>
       <shadows>1</shadows>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
     </scene>
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
