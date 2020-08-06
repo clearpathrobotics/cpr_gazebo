@@ -5,6 +5,7 @@
     <arg name="x" default="0.0"/>
     <arg name="y" default="0.0"/>
     <arg name="z" default="0.0"/>
+    <arg name="yaw" default="0.0" />
 
     <arg name="use_sim_time" default="true" />
     <arg name="gui" default="true" />
@@ -24,5 +25,6 @@
       <arg name="x" value="$(arg x)"/>
       <arg name="y" value="$(arg y)"/>
       <arg name="z" value="$(arg z)"/>
+      <arg name="yaw" value="$(arg yaw)"/>
     </include>
 </launch>
