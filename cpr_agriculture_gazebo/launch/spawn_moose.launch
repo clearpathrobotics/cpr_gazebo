@@ -2,10 +2,12 @@
   <arg name="x" default="0.0"/>
   <arg name="y" default="-10.0"/>
   <arg name="z" default="5.0"/>
+  <arg name="yaw" default="0.0"/>
 
   <include file="$(find moose_gazebo)/launch/spawn_moose.launch">
     <arg name="x" value="$(arg x)"/>
     <arg name="y" value="$(arg y)"/>
     <arg name="z" value="$(arg z)"/>
+    <arg name="yaw" value="$(arg yaw)"/>
   </include>
 </launch>
