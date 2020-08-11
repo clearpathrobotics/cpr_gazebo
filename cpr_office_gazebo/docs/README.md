@@ -1,6 +1,6 @@
 # cpr_office_gazebo
 
-Indoor office simulation world for Gazebo including both completed and under construction version
+Indoor office simulation world for Gazebo including both completed and under-construction versions
 
 ## Supported Platrofms
 
@@ -16,13 +16,33 @@ Indoor office simulation world for Gazebo including both completed and under con
 ### Dingo
 <img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2019/11/04142259/dingo-menu-1.png" width="20%">
 
-## Completed Launching
+## Complete Launching
 
 ```roslaunch cpr_office_gazebo office_world.launch```
 
 Optionally, you can specify a platform using the platform variable:
 
 ```roslaunch cpr_office_gazebo office_world.launch platform:=jackal```
+
+Supported values for the platform variable are:
+* husky (default)
+* jackal
+* ridgeback
+* dingo
+
+The spawn location for the robot can be specified by setting the `x`, `y`, `z`, and `yaw` variables.  The Z value should be set
+to be above ground-level; otherwise the robot may fall through the ground plane as the environment renders.
+
+## Features of the complete office world
+
+### Large, open areas
+<img src="img6.png">
+
+### Narrow hallways
+<img src="img4.png">
+
+### Meeting rooms & offices
+<img src="img5.png">
 
 ## Construction Launching
 
@@ -41,16 +61,13 @@ Supported values for the platform variable are:
 The spawn location for the robot can be specified by setting the `x`, `y`, `z`, and `yaw` variables.  The Z value should be set
 to be above ground-level; otherwise the robot may fall through the ground plane as the environment renders.
 
-## Features
+## Features of the construction world
 
-<img src="img1.png">
-
+### Incomplete walls
 <img src="img2.png">
 
+### Different ground textures
 <img src="img3.png">
 
-<img src="img4.png">
-
-<img src="img5.png">
-
-<img src="img6.png">
+### Construction-oriented debris & obstacles
+<img src="img1.png">
