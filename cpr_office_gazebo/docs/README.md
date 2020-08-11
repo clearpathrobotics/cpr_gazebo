@@ -7,6 +7,7 @@ Indoor office simulation world for Gazebo including both completed and under con
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/jackal.jpg" width="20%">
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/husky.jpg" width="20%">
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/06/ridgeback.jpg" width="20%">
+<img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2019/11/04142259/dingo-menu-1.png" width="20%">
 
 ## Completed Launching
 
