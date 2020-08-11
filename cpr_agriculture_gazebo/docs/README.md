@@ -30,7 +30,7 @@ Supported values for the platform variable are:
 * warthog
 * moose
 
-The spawn location for the robot can be specified by setting the `x`, `y`, and `z` variables.  The Z value should be set
+The spawn location for the robot can be specified by setting the `x`, `y`, `z`, and `yaw` variables.  The Z value should be set
 to be above ground-level; otherwise the robot may fall through the ground plane as the environment renders.
 
 ## Features
