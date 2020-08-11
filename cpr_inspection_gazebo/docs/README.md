@@ -36,7 +36,7 @@ Supported values for the platform variable are:
 * moose
 * heron
 
-The spawn location for the robot can be specified by setting the `x`, `y`, and `z` variables.  Note that some X/Y positions
+The spawn location for the robot can be specified by setting the `x`, `y`, `z`, and `yaw` variables.  Note that some X/Y positions
 may place the robot over the water feature instead of on dry land.  The Z value should be set to be above ground-level; otherwise
 the robot may fall through the ground plane as the environment renders.
 
