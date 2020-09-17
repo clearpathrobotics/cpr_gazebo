@@ -4,7 +4,7 @@ Outdoor simulation world for Gazebo
 
 <img src="img1.png">
 
-## Supported Platrofms
+## Supported Platforms
 
 ### Husky
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/husky.jpg" width="20%">

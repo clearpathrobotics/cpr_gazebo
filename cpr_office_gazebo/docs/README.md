@@ -2,7 +2,7 @@
 
 Indoor office simulation world for Gazebo including both completed and under-construction versions
 
-## Supported Platrofms
+## Supported Platforms
 
 ### Jackal
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/jackal.jpg" width="20%">
