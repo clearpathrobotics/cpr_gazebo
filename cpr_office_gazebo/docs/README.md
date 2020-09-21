@@ -9,28 +9,28 @@ Indoor office simulation world for Gazebo including both completed and under-con
 
 Office | Office Construction
 ------ | -------------------
-<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=jackal"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=jackal"><img src="launch-stack.png"></a>
+<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=jackal"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=jackal"><img src="launch-stack.png"></a>
 
 ### Husky
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/husky.jpg" width="20%">
 
 Office | Office Construction
 ------ | -------------------
-<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=husky"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=husky"><img src="launch-stack.png"></a>
+<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=husky"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=husky"><img src="launch-stack.png"></a>
 
 ### Ridgeback
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/06/ridgeback.jpg" width="20%">
 
 Office | Office Construction
 ------ | -------------------
-<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=ridgeback"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=ridgeback"><img src="launch-stack.png"></a>
+<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=ridgeback"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=ridgeback"><img src="launch-stack.png"></a>
 
 ### Dingo
 <img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2019/11/04142259/dingo-menu-1.png" width="20%">
 
 Office | Office Construction
 ------ | -------------------
-<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=dingo"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=dingo"><img src="launch-stack.png"></a>
+<a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_world.launch&param_RoboticPlatform=dingo"><img src="launch-stack.png"></a> | <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-office-construction-gazebo&param_SimWorld=cpr_office_gazebo&param_SimLaunch=office_construction_world.launch&param_RoboticPlatform=dingo"><img src="launch-stack.png"></a>
 
 ## Complete Launching
 
