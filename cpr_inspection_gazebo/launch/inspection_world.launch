@@ -1,6 +1,5 @@
 <launch>
     <param name="inspection_geom" command="$(find xacro)/xacro --inorder '$(find cpr_inspection_gazebo)/urdf/inspection_geometry.urdf.xacro'" />
-    <param name="inspection_water_geom" command="$(find xacro)/xacro --inorder '$(find cpr_inspection_gazebo)/urdf/inspection_water.urdf.xacro'" />
 
     <arg name="platform" default="$(optenv CPR_GAZEBO_PLATFORM husky)" />
     <arg name="x" default="0.0"/>
