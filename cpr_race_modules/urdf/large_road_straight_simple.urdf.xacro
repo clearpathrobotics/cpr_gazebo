@@ -17,6 +17,14 @@
       <geometry>
         <mesh filename="package://gazebo_race_modules/meshes/large_road_straight_simple.dae"/>
       </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
   </link>
   <gazebo> <static>true</static></gazebo>
