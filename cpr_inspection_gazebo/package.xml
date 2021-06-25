@@ -4,7 +4,8 @@
   <version>0.0.0</version>
   <description>The cpr_inspection_gazebo package</description>
 
-  <maintainer email="dniewinski@clearpathrobotics.com">Dave Niewinski</maintainer>
+  <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
+  <author email="dniewinski@clearpathrobotics.com">Dave Niewinski</author>
 
   <license>BSD</license>
 
