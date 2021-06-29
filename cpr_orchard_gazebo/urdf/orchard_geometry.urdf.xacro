@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<robot name="orchard_world" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="orchard_world_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_orchard_gazebo/meshes/orchard_world.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_orchard_gazebo/meshes/orchard_trunks.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_orchard_gazebo/meshes/orchard_leaves.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_orchard_gazebo/meshes/orchard_world.dae"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_orchard_gazebo/meshes/orchard_trunks.dae"/>
+      </geometry>
+    </collision>
+  </link>
+  <gazebo> <static>true</static></gazebo>
+</robot>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cpr_orchard_gazebo</name>
+  <version>0.0.0</version>
+  <description>The cpr_orchard_gazebo package</description>
+
+  <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
+  <author email="dniewinski@clearpathrobotics.com">Dave Niewinski</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>husky_gazebo</exec_depend>
+  <exec_depend>jackal_gazebo</exec_depend>
+  <exec_depend>warthog_gazebo</exec_depend>
+
+  <export>
+  </export>
+</package>
