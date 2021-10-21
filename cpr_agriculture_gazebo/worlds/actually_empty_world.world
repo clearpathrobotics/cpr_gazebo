@@ -29,11 +29,12 @@
         </clouds>
       </sky>
     </scene>
+    <!-- Origin placed near the Big Red Barn near Stonewall, MB, Canada -->
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
-      <latitude_deg>0</latitude_deg>
-      <longitude_deg>0</longitude_deg>
-      <elevation>0</elevation>
+      <latitude_deg>50.109461</latitude_deg>
+      <longitude_deg>-97.318978</longitude_deg>
+      <elevation>250</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>

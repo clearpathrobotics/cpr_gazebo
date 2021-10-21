@@ -29,11 +29,12 @@
         </clouds>
       </sky>
     </scene>
+    <!-- Origin placed somewhere near Clearpath's office in Waterloo, ON, Canada -->
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
-      <latitude_deg>0</latitude_deg>
-      <longitude_deg>0</longitude_deg>
-      <elevation>0</elevation>
+      <latitude_deg>43.500720</latitude_deg>
+      <longitude_deg>-80.546793</longitude_deg>
+      <elevation>329</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
