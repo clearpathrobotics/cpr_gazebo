@@ -22,11 +22,6 @@ https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=
 [![Launch Stack](launch-stack.png)](
 https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-agriculture-gazebo&param_SimWorld=cpr_agriculture_gazebo&param_SimLaunch=agriculture_world.launch&param_RoboticPlatform=warthog)
 
-### Moose
-<img src="https://clearpathrobotics.com/assets/renders/Moose-KS_VR.274/Moose-KS_VR.274/0_9.jpg" width="20%">
-
-[![Launch Stack](launch-stack.png)](
-https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-agriculture-gazebo&param_SimWorld=cpr_agriculture_gazebo&param_SimLaunch=agriculture_world.launch&param_RoboticPlatform=moose)
 
 ## Launching
 
@@ -40,7 +35,6 @@ Supported values for the platform variable are:
 * husky (default)
 * jackal
 * warthog
-* moose
 
 The spawn location for the robot can be specified by setting the `x`, `y`, `z`, and `yaw` variables.  The Z value should be set
 to be above ground-level; otherwise the robot may fall through the ground plane as the environment renders.

@@ -73,6 +73,7 @@ Supported values for the platform variable are:
 * jackal
 * ridgeback
 * dingo
+* boxer
 
 The spawn location for the robot can be specified by setting the `x`, `y`, `z`, and `yaw` variables.  The Z value should be set
 to be above ground-level; otherwise the robot may fall through the ground plane as the environment renders.

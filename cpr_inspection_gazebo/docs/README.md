@@ -24,38 +24,26 @@ https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=
 [![Launch Stack](launch-stack.png)](
 https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-inspection-gazebo&param_SimWorld=cpr_inspection_gazebo&param_SimLaunch=inspection_world.launch&param_RoboticPlatform=warthog)
 
-### Moose
-<img src="https://clearpathrobotics.com/assets/renders/Moose-KS_VR.274/Moose-KS_VR.274/0_9.jpg" width="20%">
-
-[![Launch Stack](launch-stack.png)](
-https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-inspection-gazebo&param_SimWorld=cpr_inspection_gazebo&param_SimLaunch=inspection_world.launch&param_RoboticPlatform=moose)
-
-### Heron
-<img src="https://clearpathrobotics.com/wp-content/uploads/2015/08/kingfisher-basic-config.jpg" width="20%">
-
-[![Launch Stack](launch-stack.png)](
-https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?region=us-east-2&templateURL=https://cpr-gazebo-public.s3.us-east-2.amazonaws.com/CPR-Kinetic-Simulation-Stack.yaml&stackName=cpr-inspection-gazebo&param_SimWorld=cpr_inspection_gazebo&param_SimLaunch=inspection_world.launch&param_RoboticPlatform=heron)
-
 ## Launching
 
-```roslaunch cpr_inspection_gazebo inspection_world.launch```
+```
+roslaunch cpr_inspection_gazebo inspection_world.launch
+```
 
 Optionally, you can specify a platform using the platform variable:
 
-```roslaunch cpr_inspection_gazebo inspection_world.launch platform:=jackal```
+```
+roslaunch cpr_inspection_gazebo inspection_world.launch platform:=jackal
+```
 
 Supported values for the platform variable are:
 * husky (default)
 * jackal
 * warthog
-* moose
-* heron
 
 The spawn location for the robot can be specified by setting the `x`, `y`, `z`, and `yaw` variables.  Note that some X/Y positions
 may place the robot over the water feature instead of on dry land.  The Z value should be set to be above ground-level; otherwise
 the robot may fall through the ground plane as the environment renders.
-
-NOTE: the Heron's spawn location cannot be customized; it will always spawn in the same position on the water.
 
 ## Features
 

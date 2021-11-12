@@ -14,7 +14,6 @@
   <exec_depend>husky_gazebo</exec_depend>
   <exec_depend>jackal_gazebo</exec_depend>
   <exec_depend>warthog_gazebo</exec_depend>
-  <exec_depend>heron_gazebo</exec_depend>
   <exec_depend>uuv_gazebo_worlds</exec_depend>
 
   <export>
