@@ -24,6 +24,24 @@ This is a hilly, outdoor world featuring a bridge, cave/mine, water, small solar
 See [Inspection World](cpr_inspection_gazebo/docs/README.md)
 
 
+Obstacle World
+-------------------------------------------------------------
+
+This world features two maps featuring non-planar ground and many solid walls:
+
+![Obstacle World](cpr_obstacle_gazebo/docs/obstacle_world.png "Obstacle World")
+
+A small, fully-enclosed environment with narrow doorways and small indentations in the floor.  Smaller robots
+may get stuck if they drive into the holes.
+
+![Obstacle and Ramp World](cpr_obstacle_gazebo/docs/obstacle_ramp_world.png "Obstacle and Ramp World")
+
+A larger, fully-enclosed world with walls and ramps.  This very non-planar environment will pose a challenge to
+many localization and mapping algorithms.
+
+See [Obstacle World](cpr_obstacle_gazebo/docs/README.md)
+
+
 Office World
 -------------------------------------------------------------
 

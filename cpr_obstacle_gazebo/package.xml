@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>cpr_obstacle_gazebo</name>
+  <version>0.0.0</version>
+  <description>The cpr_obstacle_gazebo package</description>
+
+  <maintainer email="jmastrangelo@clearpathrobotics.com">Jose Mastrangelo</maintainer>
+  <author email="jmastrangelo@clearpathrobotics.com">Jose Mastrangelo</author>
+  <author email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <run_depend>controller_manager</run_depend>
+  <run_depend>gazebo_plugins</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>hector_gazebo_plugins</run_depend>
+  <run_depend>pointcloud_to_laserscan</run_depend>
+  <run_depend>rostopic</run_depend>
+
+  <run_depend>dingo_gazebo</run_depend>
+  <run_depend>husky_gazebo</run_depend>
+  <run_depend>jackal_gazebo</run_depend>
+  <run_depend>warthog_gazebo</run_depend>
+
+</package>
