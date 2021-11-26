@@ -1,0 +1,13 @@
+<launch>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="0.2"/>
+  <arg name="yaw" default="0.0" />
+
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="z" value="$(arg z)"/>
+    <arg name="yaw" value="$(arg yaw)"/>
+  </include>
+</launch>

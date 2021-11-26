@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:arg name="world_scale" default="1.0" />
+  <xacro:arg name="walls" default="true" />
+
+  <xacro:property name="world_scale_prop" value="$(arg world_scale)" />
+
+  <xacro:if value="$(arg walls)">
+    <xacro:property name="mesh_path" value="package://cpr_obstacle_gazebo/models/obstacle_world.stl" />
+  </xacro:if>
+  <xacro:unless value="$(arg walls)">
+    <xacro:property name="mesh_path" value="package://cpr_obstacle_gazebo/models/obstacle_world_ground.stl" />
+  </xacro:unless>
+
+  <link name="obstacle_world_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin xyz="-2 -1 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}" scale="${world_scale_prop} ${world_scale_prop} 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-2 -1 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${mesh_path}" scale="${world_scale_prop} ${world_scale_prop} 1.0"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </link>
+  <gazebo> <static>true</static></gazebo>
+  <gazebo reference="obstacle_world_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+</robot>
