@@ -20,6 +20,7 @@
   <run_depend>pointcloud_to_laserscan</run_depend>
   <run_depend>rostopic</run_depend>
 
+  <run_depend>boxer_gazebo</run_depend>
   <run_depend>dingo_gazebo</run_depend>
   <run_depend>husky_gazebo</run_depend>
   <run_depend>jackal_gazebo</run_depend>

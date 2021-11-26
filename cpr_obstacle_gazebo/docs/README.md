@@ -13,6 +13,8 @@ Indoor simulation environment for Gazebo featuring holes in the floor, narrow do
 ### Dingo
 <img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2019/11/04142259/dingo-menu-1.png" width="20%">
 
+### Boxer
+<img src="https://clearpathrobotics.com/assets/renders/Boxer_VR.283/Boxer_VR.283/0_9.jpg" width="20%">
 
 ### Warthog
 <img src="https://s3.amazonaws.com/assets.clearpathrobotics.com/wp-content/uploads/2016/08/25085714/warthog-menu.jpg" width="20%">
