@@ -2,8 +2,8 @@
 Changelog for package cpr_inspection_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2022-05-11)
+------------------
 * Re-add the entire pipeline; it looks in a previous revision a good chunk of it was accidentally deleted
 * Add boxer, remove moose and heron.
 * Squashed commit of real-world-coords branch.  Add real-world coordinates to all worlds, including elevation

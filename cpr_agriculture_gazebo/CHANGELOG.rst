@@ -2,8 +2,8 @@
 Changelog for package cpr_agriculture_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2022-05-11)
+------------------
 * Add boxer, remove moose and heron.
 * Squashed commit of real-world-coords branch.  Add real-world coordinates to all worlds, including elevation
 * Merge pull request `#17 <https://github.com/clearpathrobotics/cpr_gazebo/issues/17>`_ from clearpathrobotics/orchard

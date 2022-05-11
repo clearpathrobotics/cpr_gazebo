@@ -2,8 +2,8 @@
 Changelog for package cpr_office_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2022-05-11)
+------------------
 * Add boxer support to the obstacle world, add a note that Boxer is supported in the office world
 * Add boxer, remove moose and heron.
 * Squashed commit of real-world-coords branch.  Add real-world coordinates to all worlds, including elevation
