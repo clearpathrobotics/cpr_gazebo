@@ -2,6 +2,9 @@
 Changelog for package cpr_agriculture_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2022-05-11)
 ------------------
 * Add boxer, remove moose and heron.

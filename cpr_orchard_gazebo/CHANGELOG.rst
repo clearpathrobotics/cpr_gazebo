@@ -2,6 +2,9 @@
 Changelog for package cpr_orchard_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2022-05-11)
 ------------------
 * Squashed commit of real-world-coords branch.  Add real-world coordinates to all worlds, including elevation

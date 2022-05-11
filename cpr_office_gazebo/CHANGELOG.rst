@@ -2,6 +2,9 @@
 Changelog for package cpr_office_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2022-05-11)
 ------------------
 * Add boxer support to the obstacle world, add a note that Boxer is supported in the office world
