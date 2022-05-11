@@ -2,8 +2,8 @@
 Changelog for package cpr_inspection_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.1 (2022-05-11)
+------------------
 * Disable the water physics; UUV does not appear to be released for Noetic yet. Will re-enable later if possible
 * Contributors: Chris Iverach-Brereton
 
