@@ -52,6 +52,7 @@
     </light>
 
     <!-- The water level -->
+    <!-- Disabled because UUV does not appear to be released for Noetic (yet)
     <include>
       <uri>model://water_table</uri>
       <pose>0 0 0 0 0 0</pose>
@@ -88,6 +89,7 @@
     </plugin>
 
     <plugin name="sc_interface" filename="libuuv_sc_ros_interface_plugin.so"/>
+    -->
 
     <!-- Origin placed somewhere in Algonquin Park, ON, Canada  -->
     <spherical_coordinates>
