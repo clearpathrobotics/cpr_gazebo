@@ -22,7 +22,7 @@
     <scene>
       <ambient>1 1 1 1</ambient>
       <background>1 1 1 1</background>
-      <shadows>1</shadows>
+      <shadows>0</shadows>
       <sky>
         <clouds>
           <speed>12</speed>

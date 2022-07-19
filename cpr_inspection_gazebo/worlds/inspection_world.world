@@ -20,7 +20,7 @@
           <speed>12</speed>
         </clouds>
       </sky>
-      <shadows>1</shadows>
+      <shadows>0</shadows>
     </scene>
 
     <!-- Global light sources -->
