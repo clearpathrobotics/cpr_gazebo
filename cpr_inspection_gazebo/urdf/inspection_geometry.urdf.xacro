@@ -12,6 +12,12 @@
         <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae"/>
       </geometry>
     </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae"/>
+      </geometry>
+    </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
@@ -27,5 +33,6 @@
       </surface>
     </collision>
   </link>
+
   <gazebo> <static>true</static></gazebo>
 </robot>
