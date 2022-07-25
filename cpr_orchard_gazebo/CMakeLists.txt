@@ -9,3 +9,7 @@ catkin_package()
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
+
+install(DIRECTORY launch meshes urdf worlds
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
