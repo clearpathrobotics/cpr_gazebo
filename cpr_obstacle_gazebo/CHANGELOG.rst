@@ -2,6 +2,9 @@
 Changelog for package cpr_obstacle_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.1 (2022-05-11)
 ------------------
 

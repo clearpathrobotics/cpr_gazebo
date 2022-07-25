@@ -2,6 +2,11 @@
 Changelog for package cpr_inspection_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add the water mesh to the visualization since UUV is disabled. This way the water at least renders, even if it doesn't have any physics
+* Contributors: Chris Iverach-Brereton
+
 0.2.1 (2022-05-11)
 ------------------
 * Disable the water physics; UUV does not appear to be released for Noetic yet. Will re-enable later if possible
