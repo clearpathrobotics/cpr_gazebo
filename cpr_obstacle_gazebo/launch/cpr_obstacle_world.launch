@@ -25,10 +25,16 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 -->
 <launch>
   <arg name="platform" default="$(optenv CPR_GAZEBO_PLATFORM jackal)" />
-  <arg name="x" default="0.0"/>
-  <arg name="y" default="0.0"/>
-  <arg name="z" default="2.0"/>
-  <arg name="yaw" default="0.0" />
+
+  <arg name="robot_x" default="0.0"/>
+  <arg name="robot_y" default="0.0"/>
+  <arg name="robot_z" default="0.2"/>
+  <arg name="robot_yaw" default="0.0" />
+
+  <arg name="world_x" default="0.0"/>
+  <arg name="world_y" default="0.0"/>
+  <arg name="world_z" default="0.0"/>
+  <arg name="world_yaw" default="0.0"/>
 
   <arg name="world_scale" default="1.0" />
   <arg name="walls" default="true" />
@@ -47,13 +53,14 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <param name="world_geom" command="$(find xacro)/xacro --inorder '$(find cpr_obstacle_gazebo)/urdf/obstacle_geometry.urdf.xacro' world_scale:=3.0 walls:=$(arg walls)" />
 
-  <node name="obstacle_world_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model office_geom -param world_geom -x 0 -y 0 -z 0 -Y 0" />
+  <node name="obstacle_world_spawner" pkg="gazebo_ros" type="spawn_model"
+    args="-urdf -model office_geom -param world_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
 
   <include file="$(find cpr_obstacle_gazebo)/launch/spawn_$(arg platform).launch">
-    <arg name="x" value="$(arg x)"/>
-    <arg name="y" value="$(arg y)"/>
-    <arg name="z" value="$(arg z)"/>
-    <arg name="yaw" value="$(arg yaw)"/>
+    <arg name="x" value="$(arg robot_x)"/>
+    <arg name="y" value="$(arg robot_y)"/>
+    <arg name="z" value="$(arg robot_z)"/>
+    <arg name="yaw" value="$(arg robot_yaw)"/>
   </include>
 
 </launch>

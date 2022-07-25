@@ -2,10 +2,16 @@
     <param name="agriculture_geom" command="$(find xacro)/xacro --inorder '$(find cpr_agriculture_gazebo)/urdf/agriculture_geometry.urdf.xacro'" />
 
     <arg name="platform" default="$(optenv CPR_GAZEBO_PLATFORM husky)" />
-    <arg name="x" default="0.0"/>
-    <arg name="y" default="0.0"/>
-    <arg name="z" default="0.0"/>
-    <arg name="yaw" default="0.0" />
+
+    <arg name="robot_x" default="0.0"/>
+    <arg name="robot_y" default="0.0"/>
+    <arg name="robot_z" default="0.2"/>
+    <arg name="robot_yaw" default="0.0" />
+
+    <arg name="world_x" default="0.0"/>
+    <arg name="world_y" default="0.0"/>
+    <arg name="world_z" default="0.0"/>
+    <arg name="world_yaw" default="0.0"/>
 
     <arg name="use_sim_time" default="true" />
     <arg name="gui" default="true" />
@@ -19,12 +25,13 @@
       <arg name="world_name" value="$(arg world_name)" />
     </include>
 
-    <node name="agriculture_world_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model agriculture_geom -param agriculture_geom -x 0 -y 0 -z 0 -Y 0" />
+    <node name="agriculture_world_spawner" pkg="gazebo_ros" type="spawn_model"
+      args="-urdf -model agriculture_geom -param agriculture_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
 
     <include file="$(find cpr_agriculture_gazebo)/launch/spawn_$(arg platform).launch">
-      <arg name="x" value="$(arg x)"/>
-      <arg name="y" value="$(arg y)"/>
-      <arg name="z" value="$(arg z)"/>
-      <arg name="yaw" value="$(arg yaw)"/>
+      <arg name="x" value="$(arg robot_x)"/>
+      <arg name="y" value="$(arg robot_y)"/>
+      <arg name="z" value="$(arg robot_z)"/>
+      <arg name="yaw" value="$(arg robot_yaw)"/>
     </include>
 </launch>
