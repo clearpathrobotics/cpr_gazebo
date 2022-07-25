@@ -2,8 +2,8 @@
 Changelog for package cpr_inspection_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.2 (2022-07-25)
+------------------
 * Add the water mesh to the visualization since UUV is disabled. This way the water at least renders, even if it doesn't have any physics
 * Contributors: Chris Iverach-Brereton
 

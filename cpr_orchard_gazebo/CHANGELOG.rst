@@ -2,8 +2,8 @@
 Changelog for package cpr_orchard_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.2 (2022-07-25)
+------------------
 * Add the install directive to the orchard world
 * Contributors: Chris Iverach-Brereton
 
