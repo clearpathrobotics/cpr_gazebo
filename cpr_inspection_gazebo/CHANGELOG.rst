@@ -2,6 +2,13 @@
 Changelog for package cpr_inspection_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#18 <https://github.com/clearpathrobotics/cpr_gazebo/issues/18>`_ from clearpathrobotics/world_position
+  Allow changing the world position
+* Add world\_{x|y|z|yaw} arguments and rename x|y|z|yaw to robot\_{x|y|z|yaw} so we can reposition the world if desired.
+* Contributors: Chris Iverach-Brereton
+
 0.2.2 (2022-07-25)
 ------------------
 * Add the water mesh to the visualization since UUV is disabled. This way the water at least renders, even if it doesn't have any physics
