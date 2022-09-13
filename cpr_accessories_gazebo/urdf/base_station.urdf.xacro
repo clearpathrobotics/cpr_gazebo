@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="clearpath_base_station">
+  <xacro:macro name="cpr_base_station" params="name parent *origin">
+    <link name="${name}_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://cpr_accessories_gazebo/meshes/BaseStationWithTripod.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cpr_accessories_gazebo/meshes/BaseStationWithTripod.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${name}_joint" type="fixed">
+      <parent link="${parent}" />
+      <child link="${name}_link" />
+      <xacro:insert_block name="origin" />
+    </joint>
+  </xacro:macro>
+</robot>

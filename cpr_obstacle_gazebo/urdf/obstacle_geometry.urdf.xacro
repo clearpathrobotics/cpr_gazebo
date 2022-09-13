@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot xmlns:xacro="http://wiki.ros.org/xacro">
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="obstacle_world">
   <xacro:arg name="world_scale" default="1.0" />
   <xacro:arg name="walls" default="true" />
 
