@@ -8,6 +8,6 @@ catkin_package()
 roslaunch_add_file_check(launch)
 
 install(
-  DIRECTORY launch models urdf worlds
+  DIRECTORY launch models rviz urdf worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
