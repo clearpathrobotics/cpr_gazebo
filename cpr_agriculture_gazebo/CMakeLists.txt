@@ -10,6 +10,6 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-install(DIRECTORY launch meshes rviz urdf worlds
+install(DIRECTORY images launch meshes rviz scripts urdf worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
