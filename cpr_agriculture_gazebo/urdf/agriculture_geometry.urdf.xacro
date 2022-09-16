@@ -7,13 +7,13 @@
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
       <geometry>
         <mesh filename="package://cpr_agriculture_gazebo/meshes/agriculture_world.dae"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
       <geometry>
         <mesh filename="package://cpr_agriculture_gazebo/meshes/agriculture_world.dae"/>
       </geometry>
@@ -30,12 +30,12 @@
 
   <xacro:include filename="$(find cpr_accessories_gazebo)/urdf/base_station.urdf.xacro" />
   <xacro:cpr_base_station name="base_station" parent="agriculture_world_link">
-    <origin xyz="40 17 0.7" />
+    <origin xyz="-40 -17 0.7" />
   </xacro:cpr_base_station>
 
   <xacro:include  filename="$(find cpr_accessories_gazebo)/urdf/charge_dock.urdf.xacro" />
   <xacro:cpr_charge_dock name="charge_dock" parent="agriculture_world_link">
-    <origin xyz="-8 4 -0.2" rpy="0 0 -1.5707963267948966" />
+    <origin xyz="8 -4 0.2" rpy="0 0 1.5707963267948966" />
   </xacro:cpr_charge_dock>
 
   <gazebo> <static>true</static></gazebo>
