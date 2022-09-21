@@ -9,19 +9,19 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
       <geometry>
-        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae"/>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae" scale="2 2 1"/>
       </geometry>
     </visual>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
       <geometry>
-        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae"/>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
       <geometry>
-        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae"/>
+        <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae" scale="2 2 1"/>
       </geometry>
       <surface>
         <friction>
