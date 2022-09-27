@@ -23,7 +23,7 @@
   <collision name="water_table">
     <pose>0 0 0 0 0 0</pose>
     <geometry>
-      <mesh><uri>model://water_table/meshes/inspection_world.dae</uri><scale>1 1 1</scale></mesh>
+      <mesh><uri>model://water_table/meshes/inspection_world.dae</uri><scale>2 2 1</scale></mesh>
     </geometry>
   </collision>
 
