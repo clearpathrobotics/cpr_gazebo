@@ -72,6 +72,15 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: <Fixed Frame>
+      Show Trail: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -108,17 +117,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 16.624408721923828
-        Y: 0.8830748200416565
-        Z: 9.535954475402832
+        X: 14.059196472167969
+        Y: -0.532046377658844
+        Z: 6.755804061889648
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6953978538513184
+      Pitch: 0.6953980326652527
       Target Frame: <Fixed Frame>
-      Yaw: 4.313581466674805
+      Yaw: 4.203584671020508
     Saved: ~
 Window Geometry:
   Displays:
