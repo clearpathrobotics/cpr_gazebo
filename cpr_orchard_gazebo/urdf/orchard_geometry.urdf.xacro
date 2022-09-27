@@ -46,4 +46,9 @@
     </collision>
   </link>
   <gazebo> <static>true</static></gazebo>
+
+  <xacro:include filename="$(find cpr_accessories_gazebo)/urdf/base_station.urdf.xacro" />
+  <xacro:cpr_base_station name="base_station" parent="orchard_world_link">
+    <origin xyz="1 2 0" />
+  </xacro:cpr_base_station>
 </robot>
