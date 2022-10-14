@@ -7,16 +7,16 @@
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
     <!--
-      Align the world geometry so that X+ is north and Y+ is west
+      Align the world geometry so that X+ is east and Y+ is north (ENU)
     -->
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
+      <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
       <geometry>
         <mesh filename="package://cpr_agriculture_gazebo/meshes/agriculture_world.dae"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
+      <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
       <geometry>
         <mesh filename="package://cpr_agriculture_gazebo/meshes/agriculture_world.dae"/>
       </geometry>
