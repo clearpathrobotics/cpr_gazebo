@@ -61,6 +61,11 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_station_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         orchard_world_link:
           Alpha: 1
           Show Axes: false
@@ -109,7 +114,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 23.711271286010742
+      Distance: 37.31014633178711
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -117,9 +122,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 14.059196472167969
-        Y: -0.532046377658844
-        Z: 6.755804061889648
+        X: -18.02405548095703
+        Y: 9.54096508026123
+        Z: -1.4313596487045288
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false

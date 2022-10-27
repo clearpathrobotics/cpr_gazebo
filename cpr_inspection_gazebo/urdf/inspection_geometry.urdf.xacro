@@ -7,19 +7,19 @@
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
+      <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
       <geometry>
         <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae" scale="2 2 1"/>
       </geometry>
     </visual>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
+      <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
       <geometry>
         <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_water.dae" scale="2 2 1"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/>
+      <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
       <geometry>
         <mesh filename="package://cpr_inspection_gazebo/meshes/inspection_world.dae" scale="2 2 1"/>
       </geometry>
@@ -36,7 +36,7 @@
 
   <xacro:include filename="$(find cpr_accessories_gazebo)/urdf/base_station.urdf.xacro" />
   <xacro:cpr_base_station name="base_station" parent="inspection_world_link">
-    <origin xyz="-12 0 1" rpy="0 0 0" />
+    <origin xyz="0 -12 1" rpy="0 0 0" />
   </xacro:cpr_base_station>
 
   <gazebo> <static>true</static></gazebo>

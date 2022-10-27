@@ -3,10 +3,10 @@
 
     <arg name="platform" default="$(optenv CPR_GAZEBO_PLATFORM husky)" />
 
-    <arg name="robot_x" default="-18.0"/>
-    <arg name="robot_y" default="-6.0"/>
+    <arg name="robot_x" default="6.0"/>
+    <arg name="robot_y" default="-18.0"/>
     <arg name="robot_z" default="2.0"/>
-    <arg name="robot_yaw" default="1.5707963267948966" />
+    <arg name="robot_yaw" default="0" />
 
     <arg name="world_x" default="0.0"/>
     <arg name="world_y" default="0.0"/>
