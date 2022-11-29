@@ -2,6 +2,12 @@
 Changelog for package cpr_office_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add the rviz directory to the install targets
+* Add a new accessories package with the charge dock and base station. Add view_world.launch files to all relevant packages so you can view the environment without spinning up Gazebo. Add the wireless charge dock and base station to the agriculture world
+* Contributors: Chris Iverach-Brereton
+
 0.2.3 (2022-07-27)
 ------------------
 * Merge pull request `#18 <https://github.com/clearpathrobotics/cpr_gazebo/issues/18>`_ from clearpathrobotics/world_position

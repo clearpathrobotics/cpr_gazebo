@@ -2,6 +2,16 @@
 Changelog for package cpr_orchard_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Adjust the orchard and inspection worlds to use ENU coordinates for the world frame. Fix the robot spawn points, GPS base-station locations, and default camera orientations accordingly
+* Update the datum scripts to use the new envars
+* Move the origin to an orchard in Greece, add the datum script, add top-down tif + geotagged tif images, add the base station model near the origin
+* Add axes to the default world view
+* Add the rviz directory to the install targets
+* Add a new accessories package with the charge dock and base station. Add view_world.launch files to all relevant packages so you can view the environment without spinning up Gazebo. Add the wireless charge dock and base station to the agriculture world
+* Contributors: Chris Iverach-Brereton
+
 0.2.3 (2022-07-27)
 ------------------
 * Merge pull request `#18 <https://github.com/clearpathrobotics/cpr_gazebo/issues/18>`_ from clearpathrobotics/world_position

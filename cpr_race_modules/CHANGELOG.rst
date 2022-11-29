@@ -2,6 +2,9 @@
 Changelog for package gazebo_race_modules
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.3 (2022-07-27)
 ------------------
 

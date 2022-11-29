@@ -2,6 +2,17 @@
 Changelog for package cpr_agriculture_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Move the wireless charge dock back outside
+* Fix the world geometry to use ENU, fix the sun direction so it makes sense for the world
+* Update the datum scripts to use the new envars
+* Rotate the world so that north is along the X axis
+* Add the top-down tif images for generating map tiles of the world. Add a script that can be sourced to set the datum
+* Rotate the world so it aligns with ENU
+* Add a new accessories package with the charge dock and base station. Add view_world.launch files to all relevant packages so you can view the environment without spinning up Gazebo. Add the wireless charge dock and base station to the agriculture world
+* Contributors: Administrator, Chris Iverach-Brereton
+
 0.2.3 (2022-07-27)
 ------------------
 * Merge pull request `#18 <https://github.com/clearpathrobotics/cpr_gazebo/issues/18>`_ from clearpathrobotics/world_position
