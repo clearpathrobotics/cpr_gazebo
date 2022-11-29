@@ -38,7 +38,7 @@
 
   <xacro:include  filename="$(find cpr_accessories_gazebo)/urdf/charge_dock.urdf.xacro" />
   <xacro:cpr_charge_dock name="charge_dock" parent="agriculture_world_link">
-    <origin xyz="-4 -8 -0.2" rpy="0 0 0" />
+    <origin xyz="8 -4 -0.2" rpy="0 0 1.5707963267948966" />
   </xacro:cpr_charge_dock>
 
   <gazebo> <static>true</static></gazebo>
