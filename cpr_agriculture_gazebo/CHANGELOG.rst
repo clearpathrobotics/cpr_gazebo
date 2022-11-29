@@ -2,8 +2,8 @@
 Changelog for package cpr_agriculture_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.4 (2022-11-29)
+------------------
 * Move the wireless charge dock back outside
 * Fix the world geometry to use ENU, fix the sun direction so it makes sense for the world
 * Update the datum scripts to use the new envars

@@ -2,8 +2,8 @@
 Changelog for package cpr_inspection_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.4 (2022-11-29)
+------------------
 * Adjust the orchard and inspection worlds to use ENU coordinates for the world frame. Fix the robot spawn points, GPS base-station locations, and default camera orientations accordingly
 * Update the datum scripts to use the new envars
 * Increase the scale of the water table model to match the world

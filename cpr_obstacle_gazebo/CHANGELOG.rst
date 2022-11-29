@@ -2,8 +2,8 @@
 Changelog for package cpr_obstacle_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.4 (2022-11-29)
+------------------
 * Add the rviz directory to the install targets
 * Add a new accessories package with the charge dock and base station. Add view_world.launch files to all relevant packages so you can view the environment without spinning up Gazebo. Add the wireless charge dock and base station to the agriculture world
 * Contributors: Chris Iverach-Brereton

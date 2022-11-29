@@ -2,8 +2,8 @@
 Changelog for package cpr_orchard_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.4 (2022-11-29)
+------------------
 * Adjust the orchard and inspection worlds to use ENU coordinates for the world frame. Fix the robot spawn points, GPS base-station locations, and default camera orientations accordingly
 * Update the datum scripts to use the new envars
 * Move the origin to an orchard in Greece, add the datum script, add top-down tif + geotagged tif images, add the base station model near the origin
