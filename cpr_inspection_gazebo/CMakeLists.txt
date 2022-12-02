@@ -13,3 +13,7 @@ include_directories(
 install(DIRECTORY images launch meshes models rviz scripts urdf worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   PATTERN "*~" EXCLUDE)
+
+install(FILES model.config
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
