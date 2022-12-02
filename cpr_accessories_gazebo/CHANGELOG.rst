@@ -2,8 +2,8 @@
 Changelog for package cpr_accessories_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.5 (2022-12-02)
+------------------
 * Merge pull request `#19 <https://github.com/clearpathrobotics/cpr_gazebo/issues/19>`_ from mhosmar-cpr/gzweb
   Add Gzweb Support
 * add missing newlines
