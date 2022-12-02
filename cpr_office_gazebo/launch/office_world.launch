@@ -27,7 +27,7 @@
     </include>
 
     <node name="office_world_spawner" pkg="gazebo_ros" type="spawn_model"
-      args="-urdf -model office_geom -param office_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
+      args="-urdf -model office_geometry -param office_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
 
     <include file="$(find cpr_office_gazebo)/launch/spawn_$(arg platform).launch">
       <arg name="x" value="$(arg robot_x)"/>
