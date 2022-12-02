@@ -26,7 +26,7 @@
     </include>
 
     <node name="orchard_gazebo_spawner" pkg="gazebo_ros" type="spawn_model"
-      args="-urdf -model orchard_geom -param orchard_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
+      args="-urdf -model orchard_geometry -param orchard_geom -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
 
     <include file="$(find cpr_orchard_gazebo)/launch/spawn_$(arg platform).launch">
       <arg name="x" value="$(arg robot_x)"/>

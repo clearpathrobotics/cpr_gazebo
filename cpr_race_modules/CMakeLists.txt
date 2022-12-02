@@ -13,3 +13,7 @@ include_directories(
 install(DIRECTORY docs launch meshes urdf worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
+
+install(FILES model.config
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)

@@ -11,3 +11,7 @@ install(
   DIRECTORY launch models rviz urdf worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
+
+install(FILES model.config
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
