@@ -2,6 +2,15 @@
 Changelog for package gazebo_race_modules
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#19 <https://github.com/clearpathrobotics/cpr_gazebo/issues/19>`_ from mhosmar-cpr/gzweb
+  Add Gzweb Support
+* add missing newlines
+* Add model.config to install target
+* Add GZweb support
+* Contributors: Chris Iverach-Brereton, Michael Hosmar
+
 0.2.4 (2022-11-29)
 ------------------
 

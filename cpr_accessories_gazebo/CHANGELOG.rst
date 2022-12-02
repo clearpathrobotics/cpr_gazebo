@@ -2,6 +2,15 @@
 Changelog for package cpr_accessories_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#19 <https://github.com/clearpathrobotics/cpr_gazebo/issues/19>`_ from mhosmar-cpr/gzweb
+  Add Gzweb Support
+* add missing newlines
+* Add model.config to install target
+* Add GZweb support
+* Contributors: Chris Iverach-Brereton, Michael Hosmar
+
 0.2.4 (2022-11-29)
 ------------------
 * Add a new accessories package with the charge dock and base station. Add view_world.launch files to all relevant packages so you can view the environment without spinning up Gazebo. Add the wireless charge dock and base station to the agriculture world
