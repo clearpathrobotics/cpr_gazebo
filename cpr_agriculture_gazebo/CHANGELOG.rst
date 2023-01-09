@@ -2,6 +2,11 @@
 Changelog for package cpr_agriculture_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix the location of the base station in the agriculture world
+* Contributors: Chris Iverach-Brereton
+
 0.2.5 (2022-12-02)
 ------------------
 * Merge pull request `#19 <https://github.com/clearpathrobotics/cpr_gazebo/issues/19>`_ from mhosmar-cpr/gzweb
