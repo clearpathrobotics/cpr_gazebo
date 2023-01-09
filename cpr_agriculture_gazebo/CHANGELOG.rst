@@ -2,8 +2,8 @@
 Changelog for package cpr_agriculture_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.6 (2023-01-09)
+------------------
 * Fix the location of the base station in the agriculture world
 * Contributors: Chris Iverach-Brereton
 
