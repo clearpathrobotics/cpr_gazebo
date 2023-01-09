@@ -33,7 +33,7 @@
 
   <xacro:include filename="$(find cpr_accessories_gazebo)/urdf/base_station.urdf.xacro" />
   <xacro:cpr_base_station name="base_station" parent="agriculture_world_link">
-    <origin xyz="-17 40 0.7" />
+    <origin xyz="-40 -17 0.7" />
   </xacro:cpr_base_station>
 
   <xacro:include  filename="$(find cpr_accessories_gazebo)/urdf/charge_dock.urdf.xacro" />
