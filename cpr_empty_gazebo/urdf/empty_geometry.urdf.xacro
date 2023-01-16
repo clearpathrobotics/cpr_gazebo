@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<robot name="empty_world" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="empty_world_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="1000 1000 0.01" />
+      </geometry>
+      <material name="light_grey">
+        <color rgba="0.7 0.7 0.7 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="1000 1000 0.01" />
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+  </link>
+
+  <xacro:include filename="$(find cpr_accessories_gazebo)/urdf/base_station.urdf.xacro" />
+  <xacro:cpr_base_station name="base_station" parent="empty_world_link">
+    <origin xyz="50 50 0" />
+  </xacro:cpr_base_station>
+
+  <!-- Temporarily disabled; will be re-enabled later
+  <xacro:include  filename="$(find cpr_accessories_gazebo)/urdf/charge_dock.urdf.xacro" />
+  <xacro:cpr_charge_dock name="charge_dock" parent="empty_world_link">
+    <origin xyz="10 -10 0" rpy="0 0 2.356194490192345"/>
+  </xacro:cpr_charge_dock>
+  -->
+
+  <gazebo> <static>true</static></gazebo>
+</robot>

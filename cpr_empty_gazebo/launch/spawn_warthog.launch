@@ -1,0 +1,13 @@
+<launch>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="-10.0"/>
+  <arg name="z" default="2.0"/>
+  <arg name="yaw" default="0.0" />
+
+  <include file="$(find warthog_gazebo)/launch/spawn_warthog.launch">
+    <arg name="x" value="$(arg x)"/>
+    <arg name="y" value="$(arg y)"/>
+    <arg name="z" value="$(arg z)"/>
+    <arg name="yaw" value="$(arg yaw)"/>
+  </include>
+</launch>

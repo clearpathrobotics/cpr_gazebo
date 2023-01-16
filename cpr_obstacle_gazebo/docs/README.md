@@ -2,7 +2,7 @@
 
 Indoor simulation environment for Gazebo featuring holes in the floor, narrow doorways, and walls.
 
-## Supported Platrofms
+## Supported Platforms
 
 ### Jackal
 <img src="https://clearpathrobotics.com/wp-content/uploads/2015/07/jackal.jpg" width="20%">
