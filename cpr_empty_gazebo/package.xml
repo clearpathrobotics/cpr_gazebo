@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>cpr_empty_gazebo</name>
-  <version>0.2.6</version>
+  <version>0.2.7</version>
   <description>The cpr_empty_gazebo package</description>
 
   <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>

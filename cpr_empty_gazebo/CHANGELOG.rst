@@ -2,7 +2,7 @@
 Changelog for package cpr_empty_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.7 (2023-01-16)
+------------------
 * Initial commit of the new empty world
 * Contributors: Chris Iverach-Brereton

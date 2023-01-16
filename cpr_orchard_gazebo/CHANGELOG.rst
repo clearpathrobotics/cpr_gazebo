@@ -2,8 +2,8 @@
 Changelog for package cpr_orchard_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.7 (2023-01-16)
+------------------
 * Fix a typo in almost every readme, add the new empty world with support for all platforms
 * Contributors: Chris Iverach-Brereton
 
