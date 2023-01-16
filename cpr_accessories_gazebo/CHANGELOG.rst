@@ -2,6 +2,9 @@
 Changelog for package cpr_accessories_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.6 (2023-01-09)
 ------------------
 
