@@ -2,6 +2,11 @@
 Changelog for package cpr_agriculture_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix a typo in almost every readme, add the new empty world with support for all platforms
+* Contributors: Chris Iverach-Brereton
+
 0.2.6 (2023-01-09)
 ------------------
 * Fix the location of the base station in the agriculture world
