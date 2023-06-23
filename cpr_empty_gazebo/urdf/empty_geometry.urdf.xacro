@@ -37,8 +37,8 @@
   </xacro:cpr_base_station>
 
   <xacro:arg name="dock_x"   default="$(optenv CPR_SIMULATION_DOCK_X 10.0)"/>
-  <xacro:arg name="dock_y"   default="$(optenv CPR_SIMULATION_DOCK_Y 10.0)"/>
-  <xacro:arg name="dock_yaw" default="$(optenv CPR_SIMULATION_DOCK_YAW 0.0)"/>
+  <xacro:arg name="dock_y"   default="$(optenv CPR_SIMULATION_DOCK_Y -10.0)"/>
+  <xacro:arg name="dock_yaw" default="$(optenv CPR_SIMULATION_DOCK_YAW 2.356194490192345)"/>
   <xacro:include  filename="$(find cpr_accessories_gazebo)/urdf/charge_dock.urdf.xacro" />
   <xacro:cpr_charge_dock name="charge_dock" parent="empty_world_link">
     <origin xyz="$(arg dock_x) $(arg dock_y) 0" rpy="0 0 $(arg dock_yaw)"/>
