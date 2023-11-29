@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>cpr_obstacle_gazebo</name>
-  <version>0.2.7</version>
+  <version>0.2.8</version>
   <description>The cpr_obstacle_gazebo package</description>
 
   <maintainer email="jmastrangelo@clearpathrobotics.com">Jose Mastrangelo</maintainer>

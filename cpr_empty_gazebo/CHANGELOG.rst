@@ -2,8 +2,8 @@
 Changelog for package cpr_empty_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.8 (2023-11-29)
+------------------
 * Fix the install targets to omit directories that do not exist
 * Revert default dock position values
 * Enable dock in empty world
